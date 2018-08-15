@@ -9,7 +9,19 @@
    	width:10%;
    	border-radius: 50%;
 }
+
+.modal{
+	width: 50vw;
+}
+
+#modalTrigger{
+	margin-left: 37%;
+	margin-top: 20%;
+}
+
 body {
-	background-color: black;
-	color: orange;
+	background-repeat: no-repeat;
+	background-size: 1700px 800px;
+	background-position: center top;
+	color: black;
 }

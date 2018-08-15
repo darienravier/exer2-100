@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>CMSC 100 Exer 2
-</title>
-<link rel = "stylesheet" href="css/home.css">
-</head>
-<body>
-<div class="imgdiv">
-	Andrei Rivera
-	<img src="images/drei.jpg">
-</div>
-<div class="imgdiv">
-	Jaeson Cho
-	<img src="images/cho.jpg">
-</div>
-<div class="imgdiv">
-	Giles Labastilla
-	<img src="images/giles.jpg">
-</div>
+	<head>
+		<title>CMSC 100 Exer 2</title>
+		<link rel = "stylesheet" href="css/home.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/materialize.min-latest.css" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/icons/icons.css" media="screen,projection"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen,projection"/>
+	</head>
+	<body style="background-image: url('images/great-wave.jpg');">
+			<div id="modalTrigger">
+			  <!-- Drei Trigger -->
+			  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Andrei Rivera</a>
 
+			  <!-- Cho Trigger -->
+			  <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Jaeson Cho</a>
 
+			  <!-- Giles Trigger -->
+			  <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Giles Labastilla</a>
+			</div>
 
+		  <!-- Drei Modal Structure -->
+		  <div id="modal1" class="modal imgdiv">
+		      <img src="images/drei.jpg">
+		  </div>
 
+		  <!-- Cho Modal Structure -->
+		  <div id="modal2" class="modal imgdiv">
+		    <img src="images/cho.jpg">
+		  </div>
 
+		  <!-- Giles Modal Structure -->
+		  <div id="modal3" class="modal imgdiv">
+		    <img src="images/giles.jpg">
+		  </div>
 
-
-</body>
+		<!-- JavaScript -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script src="js/materialize.min-latest.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/init.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			    var elems = document.querySelectorAll('.modal');
+			    var instances = M.Modal.init(elems, options);
+			  });
+		</script>
+	</body>
 </html>
